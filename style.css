@@ -1,0 +1,131 @@
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #f3e8ff, #fce7f3);
+    min-height: 100vh;
+    padding: 40px 20px;
+    color: #333;
+}
+
+/* Contenedor principal */
+.contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    color: #7e22ce;
+    margin-bottom: 35px;
+    font-size: 32px;
+}
+
+/* Contenedor de los perfiles */
+.perfiles {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+/* Tarjetas de perfil */
+.card {
+    background-color: white;
+    width: 350px;
+    padding: 25px;
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(126, 34, 206, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Efecto al pasar el cursor */
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 25px rgba(126, 34, 206, 0.25);
+}
+
+/* Imágenes de los usuarios */
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 5px solid #e9d5ff;
+    margin-bottom: 20px;
+}
+
+/* Nombre del usuario */
+.card h2 {
+    color: #7e22ce;
+    font-size: 23px;
+    margin-bottom: 12px;
+}
+
+/* Descripción del usuario */
+.card p {
+    color: #666;
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 18px;
+}
+
+/* Estado de la cuenta */
+#estado-cuenta-1,
+#estado-cuenta-2 {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+/* Botones */
+.card button {
+    display: block;
+    width: 100%;
+    background-color: #9333ea;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Efecto del botón */
+.card button:hover {
+    background-color: #6b21a8;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 600px) {
+    body {
+        padding: 25px 15px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    .perfiles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+}
